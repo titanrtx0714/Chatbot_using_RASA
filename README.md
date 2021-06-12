@@ -26,3 +26,23 @@ Here's how the model performs after training
 ![Screenshot (109)](https://user-images.githubusercontent.com/62187533/121788083-0fa11c00-cbe8-11eb-9593-379a86b4aebf.png)
 ![Screenshot (110)](https://user-images.githubusercontent.com/62187533/121788085-0fa11c00-cbe8-11eb-8c79-1194226f0f2f.png)
 ![Screenshot (111)](https://user-images.githubusercontent.com/62187533/121788086-1039b280-cbe8-11eb-9535-508877d507e7.png)
+
+
+Using ngrok server the chatbot was deployed on telegram : https://t.me/Mydemobot20_bot
+
+Here are some of the screenshots:
+
+![1623529117297](https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg)
+![1623529117304](https://user-images.githubusercontent.com/62187533/121788384-85a68280-cbea-11eb-8c54-9513506bf628.jpg)
+![1623529117281](https://user-images.githubusercontent.com/62187533/121788383-850dec00-cbea-11eb-9084-38af30685fde.jpg)
+![1623529117273](https://user-images.githubusercontent.com/62187533/121788382-83442880-cbea-11eb-9853-05ce7d3c66b7.jpg)
+![1623529117363](https://user-images.githubusercontent.com/62187533/121788438-efbf2780-cbea-11eb-8b46-25f8005b9232.jpg)
+![1623529117355](https://user-images.githubusercontent.com/62187533/121788437-efbf2780-cbea-11eb-9c03-685764e95931.jpg)
+![1623529117348](https://user-images.githubusercontent.com/62187533/121788436-edf56400-cbea-11eb-8331-6bb44e887252.jpg)
+![1623529117333](https://user-images.githubusercontent.com/62187533/121788500-50e6fb00-cbeb-11eb-9625-d88d37b89654.jpg)
+![1623529117326](https://user-images.githubusercontent.com/62187533/121788499-504e6480-cbeb-11eb-9551-09a71404c9b9.jpg)
+![1623529117319](https://user-images.githubusercontent.com/62187533/121788497-4fb5ce00-cbeb-11eb-8afe-5de9a6f3b3f0.jpg)
+![1623529117311](https://user-images.githubusercontent.com/62187533/121788496-4dec0a80-cbeb-11eb-82f0-2d86bb8723ab.jpg)
+
+
+
