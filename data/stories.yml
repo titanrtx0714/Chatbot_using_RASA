@@ -1,0 +1,150 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: crn
+  steps:
+  - intent: corona
+  - action: utter_corona
+
+- story: scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: stats
+  steps:
+  - intent: specify
+  - action: utter_specify
+  - intent: state_stats
+  - action: action_corona_tracker
+
+- story: risk
+  steps:
+  - intent: risk_corona
+  - action: utter_risk_corona
+
+- story: define
+  steps:
+  - intent: define_stock
+  - action: utter_define_stock
+
+- story: st_market
+  steps:
+  - intent: stock_market
+  - action: utter_stock_market
+
+- story: st_trading
+  steps:
+  - intent: start_trading
+  - action: utter_start_trading
+
+- story: n_stocks
+  steps:
+  - intent: number_of_stocks
+  - action: utter_no_stocks
+
+- story: st_returns
+  steps:
+  - intent: stock_returns
+  - action: utter_stock_returns
+
+- story: av_stocks
+  steps:
+  - intent: avoid_stocks
+  - action: utter_avoid_stocks
+
+- story: bse
+  steps:
+  - intent: bse_nse
+  - action: utter_bse_nse
+
+- story: dmt
+  steps:
+  - intent: demat
+  - action: utter_demat
+
+- story: bo
+  steps:
+  - intent: bottoming_out
+  - action: utter_bottoming_out
+
+- story: st_resources
+  steps:
+  - intent: stock_resources
+  - action: utter_stock_resources
+
+- story: open_demat
+  steps:
+  - intent: open_demat
+  - action: utter_open_demat
+
+- story: weather_story1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_specify_city
+  - intent: city
+  - action: action_weather_tracker
+  - intent: ask_weather
+  - action: action_weather_tracker
+
+
+- story: about_news
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: news
+  - action: action_news_tracker
+
+- story: about_stocks
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: tell_stocks
+    - action: action_stocks_tracker
+    - intent: companies
+    - action: action_stocks_tracker
+
+- story: s_news
+  steps:
+    - intent: st_news
+    - action: action_stock_news_tracker
+
+- story: c_price
+  steps:
+    - intent: price
+    - action: action_current_price
+
+- story: b_chl
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot

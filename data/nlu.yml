@@ -1,0 +1,677 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what can you do for me?
+    - tell me about yourself
+    - What are your functions?
+    - Your functionality
+    - What's your scope
+    - What are you capable of?
+    - How useful you are?
+    - Who am I talking to?
+    - tell me what you can do for me
+    - Describe yourself
+    - How do you see yourself
+
+- intent: out_of_scope
+  examples: |
+    - please help with my ice cream it's dripping
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - i want a non dripping ice cream
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - neither
+    - I want french cuisine
+    - i am hungry
+    - restaurant
+    - can i be shown a gluten free restaurant
+    - i don't care!!!!
+    - i do not care how are you
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - hang on let me find it
+    - stop it, i do not care!!!
+    - how come?
+    - I changed my mind
+    - what?
+    - did i break you
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - no stop
+    - give me food
+    - i want food
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - can you help me to build a bot
+    - a wood chuck can't chuck any kind of wood
+    - a wood chuck can't chuck wood
+    - are you wearing anything?
+    - can i arrange a taxi?
+    - can i book a taxi?
+    - can i order a pizza?
+    - give quiche a chance
+    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+    - i am heavy weapons guy and this is my weapon
+    - i know kung-fu
+    - i need a taxi
+    - i want a pepperoni pizza
+    - i want to order a pizza
+    - i'd like a pizza please
+    - i'm all out of bubblegum
+    - i'm asking you to marry me
+    - it's an albany expression
+    - marry me
+    - now i have a machine gun ho-ho-ho!
+    - please marry me
+    - tell me what you're wearing?
+    - trial by stone!
+    - what are you wearing?
+    - will you marry me?
+    - you come to me on the day of my daughter's wedding
+    - you don't win friends with salad
+    - you're going to need a bigger boat
+    - fuck you
+    - oh my god
+
+- intent: corona
+  examples: |
+    - what does covid mean?
+    - what does covid stand for?
+    - what does covid19 mean?
+    - what does covid-19 mean?
+    - what does covid19 stand for?
+    - what is the structure of coronavirus
+    - what kind of disease is corona?
+    - what kind of illness is corona virus?
+    - why is it called corona virus?
+    - how does corona virus spread?
+    - cause of corona virus
+    - reason of corona virus
+    - what causes corona
+    - explain corona virus
+    - corona
+
+- intent: risk_corona
+  examples: |
+    - who is at high risk due to corona
+    - who are effected the most by corona
+    - which age group of people are targeted by corona
+    - is there any specific age group effected the most by corona
+    - target of corona virus
+    -  which age group of people are effected the most by corona
+
+- intent: specify
+  examples: |
+    - tell me about corona numbers
+    - corona numbers
+    - corona stats
+    - corona statistics
+    - number of corona virus cases in my state
+    - number of corona virus cases here
+    - number of corona virus cases there
+    - corona statistics here
+    - corona statistics there
+
+- intent: state_stats
+  examples: |
+    - corona cases in [uttar pradesh]{"entity":"location"}
+    - Please let me know about the corona cases in [Delhi]{"entity":"location"}
+    - corona cases in [Karnataka]{"entity":"location"}
+    - corona cases in [Tamilnadu]{"entity":"location"}
+    - Tell me about corona cases in [Kerala]{"entity":"location"}
+    - corona cases in [Pondichhery]{"entity":"location"}
+    - corona stats in [Maharastra]{"entity":"location"}
+    - corona statistics in [Goa]{"entity":"location"}
+    - I wan to know about the corona cases in [AndhraPradesh]{"entity":"location"}
+    - corona cases in [Telangana]{"entity":"location"}
+    - corona cases in [MadhyaPradesh]{"entity":"location"}
+    - corona cases in [Gujrat]{"entity":"location"}
+    - Corona virus stats in [Haryana]{"entity":"location"}
+    - corona cases in [HimachalPradesh]{"entity":"location"}
+    - corona cases in [Uttarakhand]{"entity":"location"}
+    - Deaths due to corona in [Jammu and Kashmir]{"entity":"location"}
+    - corona cases in [Ladakh]{"entity":"location"}
+    - Recovered corona cases in [Chattisgarh]{"entity":"location"}
+    - corona cases in [Bihar]{"entity":"location"}
+    - corona cases in [Jharkhand]{"entity":"location"}
+    - Can you tell me about the corona cases in [Odisha]{"entity":"location"}?
+    - corona cases in [India]{"entity":"location"}
+    - corona cases in [west bengal]{"entity":"location"}
+    - corona cases in [Sikkim]{"entity":"location"}
+    - Active corona cases in [Assam]{"entity":"location"}
+    - active cases in [Meghalaya]{"entity":"location"}
+    - corona cases in [Manipur]{"entity":"location"}
+    - corona cases in [Nagaland]{"entity":"location"}
+    - Number of corona cases in [Mizoram]{"entity":"location"}
+    - Tell me the corona stats in [Tripura]{"entity":"location"}
+    - corona cases in [Arunachal Pradesh]{"entity":"location"}
+
+- intent: weather
+  examples: |
+    - weather
+    - what's the weather
+    - what is the temperature today
+    - what is the temperature
+    - i want to know the temperature
+    - i want to know the weather of today
+    - tell me the weather forecast
+    - tell me something about the weather
+    - hows the weather today
+
+
+- intent: city
+  examples: |
+    - [delhi]{"entity":"location"}
+    - [chandigarh]{"entity":"location"}
+    - [london]{"entity":"location"}
+    - [berlin]{"entity":"location"}
+    - [ohio]{"entity":"location"}
+    - [france]{"entity":"location"}
+    - [bangalore]{"entity":"location"}
+    - [mumbai]{"entity":"location"}
+    - [jaipur]{"entity":"location"}
+    - [gorakhpur]{"entity":"location"}
+    - [sydney]{"entity":"location"}
+    - [melbourne]{"entity":"location"}
+    - [new york]{"entity":"location"}
+    - [tokyo]{"entity":"location"}
+    - [kanpur]{"entity":"location"}
+    - [faridabad]{"entity":"location"}
+    - [mexico]{"entity":"location"}
+    - [udaipur]{"entity":"location"}
+    - [nasik]{"entity":"location"}
+    - [nagpur]{"entity":"location"}
+    - [bhopal]{"entity":"location"}
+    - [indore]{"entity":"location"}
+    - [ranchi]{"entity":"location"}
+    - [patna]{"entity":"location"}
+    - [ahemdabad]{"entity":"location"}
+    - [panaji]{"entity":"location"}
+    - [dallas]{"entity":"location"}
+    - [las vegas]{"entity":"location"}
+    - [jerusalem]{"entity":"location"}
+    - [islamabad]{"entity":"location"}
+    - [karachi]{"entity":"location"}
+    - [rawalpindi]{"entity":"location"}
+    - [dhaka]{"entity":"location"}
+    - [colombo]{"entity":"location"}
+    - [kathamandu]{"entity":"location"}
+    - [shanghai]{"entity":"location"}
+    - [canberra]{"entity":"location"}
+    - [muzzafarnagar]{"entity":"location"}
+    - [Beijing]{"entity":"location"}
+    - [Cape town]{"entity":"location"}
+    - [Shimla]{"entity":"location"}
+    - [Rhotak]{"entity":"location"}
+    - [Baghpat]{"entity":"location"}
+    - [Ghaziabad]{"entity":"location"}
+    - [Moradabad]{"entity":"location"}
+
+- intent: ask_weather
+  examples: |
+    - What's the weather in [Berlin]{"entity":"location"} at the moment?
+    - What's the weather in [London]{"entity":"location"} today?
+    - Show me what's the weather in [Paris]{"entity":"location"}
+    - I wonder what is the weather in [Vilnius]{"entity":"location"} right now?
+    - Is the weather nice in [Barcelona]{"entity":"location"} today?
+    - I am going to [London]{"entity":"location"} today and I wonder what is the weather out there?
+    - I am planning my trip to [Amsterdam]{"entity":"location"}. What is the weather out there?
+    - Show me the weather in [Dublin]{"entity":"location"}, please
+    - in [London]{"entity":"location"}
+    - [Lithuania]{"entity":"location"}
+    - Oh, sorry, [in Italy]{"entity":"location"}
+    - Tell me the weather in [Vilnius]{"entity":"location"}
+    - The weather condition in [Italy]{"entity":"location"}
+    - hows weather in [Chennai]{"entity":"location"}
+    - weather in [Hungary]{"entity":"location"}
+    - [mumbai]{"entity":"location"}
+    - Temperature at [Paris]{"entity":"location"}
+    - [Chennai]{"entity":"location"}
+    - hows weather in [Berlin]{"entity":"location"}
+    - hows weather in [Dublin]{"entity":"location"}
+    - hows weather in [gurgaon]{"entity":"location"}
+    - hows weather in [greater noida]{"entity":"location"}
+    - Hows [Chennai doing today]{"entity":"location"}
+    - in [banglore]{"entity":"location"}
+    - Hows [lucknow]{"entity":"location"} doing today?
+    - [Chennai]{"entity":"location"}
+    - Hows [Paris]{"entity":"location"} today?
+    - May I know weather today]{"entity":"location"}
+    - Temperature in [hapur]{"entity":"location"}
+    - Hows weather in [noida]{"entity":"location"}
+    - temperature in [mohali]{"entity":"location"}
+    - Hows weather in [pune]{"entity":"location"}
+    - Whats the weather in [kolkata]{"entity":"location"}
+    - whats the weather in [Chennai]{"entity":"location"}
+    - in [Paris]{"entity":"location"}
+    - In [Chennai]{"entity":"location"}
+    - hows [Mumbai]{"entity":"location"}
+    - Weather in [London]{"entity":"location"}
+
+- intent: news
+  examples: |
+    - News
+    - news
+    - what's trending?
+    - tell me latest news
+    - what's going on in the world?
+    - show me latest news
+    - latest news
+    - can you tell me latest news
+    - what is trending in the world
+    - I want to know what is going on in the world
+    - Tell me latest news
+    - what's hot
+    - how's the world
+    - What's the news today
+    - Trending news
+    - World trending
+    - Top news
+    - tell me about the world
+    - I want to know latest news
+    - something new
+    - something about the world
+    - News headlines
+
+- intent: tell_stocks
+  examples: |
+    - tell me something about [tesla]{"entity":"stock"}
+    - what are your thoughts about [amazon]{"entity":"stock"}
+    - what do you think about [tesla]{"entity":"stock"}
+    - feelings about [honda]{"entity":"stock"}
+    - what are people saying about [infosys]{"entity":"stock"}
+    - how's [SBI]{"entity":"stock"} doing?
+    - feelings about [apple]{"entity":"stock"}
+    - I want to know what people are saying about [bajaj finance]{"entity":"stock"}
+    - thoughts about [kotak]{"entity":"stock"}
+    - analyze the tweets of [tata motors]{"entity":"stock"}
+    - tell me what people are saying about [wipro]{"entity":"stock"}
+    - sentiment analysis of [reliance industries]{"entity":"stock"}
+    - something good about [qualcom]{"entity":"stock"}
+
+- intent: define_stock
+  examples: |
+    - what is a stock?
+    - define stock
+    - tell me about stocks
+    - definition of stock
+    - what is called as a stock?
+
+- intent: stock_market
+  examples: |
+    - what is a share?
+    - how stock market works?
+    - describe stock market
+    - process of stock market
+    - tell me about how stock market works
+    - I want to know about stock market
+    - working of stock market
+    - share of a company
+
+- intent: start_trading
+  examples: |
+    - how to start trading?
+    - process of trading
+    - how to enter into stock market?
+    - how to begin with stock market
+    - how should I start my journey in stock market
+    - tell me how should I begin in stock market
+    - first step in stock market
+    - what should I do to enter into stock market
+
+- intent: number_of_stocks
+  examples: |
+    - ideal number of stocks
+    - how many stocks should I buy
+    - number of stocks I should buy
+    - tell me the number of stocks I should buy
+
+- intent: stock_returns
+  examples: |
+    - How much returns can I expect from the market?
+    - returns from market
+    - expectations from the market
+    - expected return from the market?
+
+- intent: avoid_stocks
+  examples: |
+    - What kind of stocks should I avoid?
+    - type of stocks I should avoid
+    - which stocks I should avoid?
+    - type of stocks that should be avoided
+    - avoided stocks
+
+- intent: bse_nse
+  examples: |
+    - what are BSE and NSE?
+    - Bombay stock exchange and national stock exchange
+    - explain BSE and NSE
+
+- intent: demat
+  examples: |
+    - Is demat account compulsory to apply for an IPO in India?
+    - is it mandatory to have demat account?
+    - demat account compulsory?
+    - should I have a demat account?
+    - should I create a demat account?
+
+- intent: bottoming_out
+  examples: |
+    - what is bottoming out
+    - what do you know about bottoming out
+    - Bottoming out?
+    - tell me about bottoming out
+    - explain bottoming out
+    - I want to know about bottoming out
+
+- intent: stock_resources
+  examples: |
+    - suggest me some resources to learn about stock market
+    - resources for stock market
+    - how can I learn about stock market
+    - guide for stock market
+    - best resources to learn about stock market
+    - tips for stock market
+    - what to study for stock market?
+    - awesome resources for stock market
+    - recommend some resources to learn about stock market
+    - how to gain knowledge about stock/share market
+    - tell me about some good resources to learn stock market
+
+- intent: open_demat
+  examples: |
+    - how to open a demat account?
+    - steps to open a demat account
+    - how can I open a demat account
+    - I need to open a demat account
+    - I want to open a demat account
+    - Instructions for opening a demat account
+    - How can I open a demat account?
+    - guide for opening a demat account
+    - need to open a demat account
+    - tips for opening a demat account
+    - demat account
+
+- intent: st_news
+  examples: |
+    - trending stock news
+    - latest stock news
+    - Tell me about some stock news
+    - stock news
+    - news related to stock market
+    - Top stock market news
+    - Show me some trending stock news
+    - What's happening in stock market?
+    - How's the stock market
+    - I want to know about what's going on in the stock market
+    - trending news related to stock market
+
+- intent: price
+  examples: |
+    - current price of [TSLA]{"entity":"ticker"}
+    - tell me current price of [AMZN]{"entity":"ticker"}
+    - I want to know the current price of [NSRGY]{"entity":"ticker"}
+    - tell me about the current price of [AAPL]{"entity":"ticker"}
+    - Can you tell me the current price of [HDB]{"entity":"ticker"}
+    - current price of [KOTAKBANK.NS]{"entity":"ticker"}
+    - Please tell me the current price of [ZM]{"entity":"ticker"}
+    - current price of [RELIANCE.NS]{"entity":"ticker"}
+    - price of [NFLX]{"entity":"ticker"}
+    - Get me the current price of [PNB.NS]{"entity":"ticker"}
+    - [UVSL.NS]{"entity":"ticker"}
+    - [IDEA.NS]{"entity":"ticker"}
+    - [LAKSHVILAS.NS]{"entity":"ticker"}
+    - [ADANIPOWER.NS]{"entity":"ticker"}
+    - [RTNINFRA.BO]{"entity":"ticker"}
+    - [RPOWER.NS]{"entity":"ticker"}
+    - [TVSMOTOR-BL.NS]{"entity":"ticker"}
+    - [SUZLON.NS]{"entity":"ticker"}
+    - [YESBANK.NS]{"entity":"ticker"}
+    - [MAHABANK.NS]{"entity":"ticker"}
+    - [IDEA.BO]{"entity":"ticker"}
+    - [RCOM.BO]{"entity":"ticker"}
+    - [CENTRALBK.NS]{"entity":"ticker"}
+    - [IOB.NS]{"entity":"ticker"}
+    - [RTNPOWER.NS]{"entity":"ticker"}
+    - [RENUKA.BO]{"entity":"ticker"}
+    - [TATAMOTORS.NS]{"entity":"ticker"}
+    - [AAPL]{"entity":"ticker"}
+    - [TATAMOTORS-BL.NS]{"entity":"ticker"}
+    - [BANKBARODA.NS]{"entity":"ticker"}
+    - [BHEL.NS]{"entity":"ticker"}
+    - [ITC.NS]{"entity":"ticker"}
+    - [ONGC.NS]{"entity":"ticker"}
+    - [HFCL.NS]{"entity":"ticker"}
+    - [ASHOKLEY.NS]{"entity":"ticker"}
+    - [IMUN]{"entity":"ticker"}
+    - [KGET]{"entity":"ticker"}
+    - [GOOG]{"entity":"ticker"}
+    - [MSFT]{"entity":"ticker"}
+    - [GOOGL]{"entity":"ticker"}
+    - [FB]{"entity":"ticker"}
+    - [TSM]{"entity":"ticker"}
+    - [BABA]{"entity":"ticker"}
+    - [JPM]{"entity":"ticker"}
+    - [V]{"entity":"ticker"}
+    - [NVDA]{"entity":"ticker"}
+    - [JNJ]{"entity":"ticker"}
+    - [WMT]{"entity":"ticker"}
+    - [UNH]{"entity":"ticker"}
+    - [BAC]{"entity":"ticker"}
+    - [MA]{"entity":"ticker"}
+    - [PG]{"entity":"ticker"}
+    - [HD]{"entity":"ticker"}
+    - [DIS]{"entity":"ticker"}
+    - [PYPL]{"entity":"ticker"}
+    - [ASML]{"entity":"ticker"}
+    - [CMCSA]{"entity":"ticker"}
+    - [XOM]{"entity":"ticker"}
+    - [TM]{"entity":"ticker"}
+    - [KO]{"entity":"ticker"}
+    - [PEP]{"entity":"ticker"}
+    - [PFE]{"entity":"ticker"}
+    - [CSCO]{"entity":"ticker"}
+    - [INTC]{"entity":"ticker"}
+    - [NKE]{"entity":"ticker"}
+    - [ORCL]{"entity":"ticker"}
+    - [ADBE]{"entity":"ticker"}
+    - [CVX]{"entity":"ticker"}
+    - [T]{"entity":"ticker"}
+    - [NVS]{"entity":"ticker"}
+    - [ABT]{"entity":"ticker"}
+    - [ACN]{"entity":"ticker"}
+    - [HON]{"entity":"ticker"}
+    - [MCD]{"entity":"ticker"}
+    - [UL]{"entity":"ticker"}
+    - [PM]{"entity":"ticker"}
+    - [QCOM]{"entity":"ticker"}
+    - [JPM]{"entity":"ticker"}
+
+- intent: companies
+  examples: |
+    - [Reliance]{"entity":"stock"}
+    - [TCS]{"entity":"stock"}
+    - [Tata motors]{"entity":"stock"}
+    - [Hitachi]{"entity":"stock"}
+    - [Samsung]{"entity":"stock"}
+    - [Nestle]{"entity":"stock"}
+    - [NTPC]{"entity":"stock"}
+    - [HDFC life]{"entity":"stock"}
+    - [DLF]{"entity":"stock"}
+    - [Gail]{"entity":"stock"}
+    - [SBI Card]{"entity":"stock"}
+    - [Havells India]{"entity":"stock"}
+    - [Lupin]{"entity":"stock"}
+    - [Gland]{"entity":"stock"}
+    - [Bosch]{"entity":"stock"}
+    - [IDBI bank]{"entity":"stock"}
+    - [Bharti airtel]{"entity":"stock"}
+    - [ITC]{"entity":"stock"}
+    - [Axis bank]{"entity":"stock"}
+    - [Maruti suzuki]{"entity":"stock"}
+    - [Adani ports]{"entity":"stock"}
+    - [Sun pharma]{"entity":"stock"}
+    - [ONGC]{"entity":"stock"}
+    - [Titan company]{"entity":"stock"}
+    - [Bajaj auto]{"entity":"stock"}
+    - [Danos Corp]{"entity":"stock"}
+    - [Aemetis INC]{"entity":"stock"}
+    - [Dillard's]{"entity":"stock"}
+    - [Cvr Partners LP]{"entity":"stock"}
+    - [Kirkland's Inc]{"entity":"stock"}
+    - [Google]{"entity":"stock"}
+    - [Facebook]{"entity":"stock"}
+    - [Alphabet]{"entity":"stock"}
+    - [Tencent Holdings]{"entity":"stock"}
+    - [Alibaba Group]{"entity":"stock"}
+    - [Visa]{"entity":"stock"}
+    - [Taiwan Semiconductor]{"entity":"stock"}
+    - [Microsoft]{"entity":"stock"}
+    - [Nvidia Corp]{"entity":"stock"}
+    - [PayPal Holdongs Inc]{"entity":"stock"}
+    - [Netflix]{"entity":"stock"}
+    - [Rollins Inc]{"entity":"stock"}
+    - [Cadence Design Systems Inc]{"entity":"stock"}
+    - [Etsy Inc]{"entity":"stock"}
+    - [Synopsys Inc]{"entity":"stock"}
+    - [Asian paints]{"entity":"stock"}
+    - [Honda]{"entity":"stock"}
+    - [Hyundai]{"entity":"stock"}
+    - [Hero]{"entity":"stock"}
+    - [Vodafone]{"entity":"stock"}
+    - [Birla]{"entity":"stock"}
+    - [Aarti Drugs Ltd]{"entity":"stock"}
+    - [Laurus Labs Ltd]{"entity":"stock"}
+    - [Birlasoft Ltd]{"entity":"stock"}
+    - [Indiamart Intermesh Ltd]{"entity":"stock"}
+    - [BEL]{"entity":"stock"}
+    - [mahindra]{"entity":"stock"}
+    - [amul]{"entity":"stock"}
+    - [TVS motors]{"entity":"stock"}
+    - [Bank of baroda]{"entity":"stock"}
+    - [Adani power limited]{"entity":"stock"}
+    - [Hero motocorp]{"entity":"stock"}
+    - [JP morgan]{"entity":"stock"}
+    - [bank of america]{"entity":"stock"}
+    - [toyota]{"entity":"stock"}
+    - [walt disney]{"entity":"stock"}
+    - [Ambuja cements]{"entity":"stock"}
+    - [Apollo hospital]{"entity":"stock"}
+    - [Dabur India]{"entity":"stock"}
+    - [Coal India]{"entity":"stock"}
+    - [Britannia]{"entity":"stock"}
+    - [Vedanta]{"entity":"stock"}
+    - [Byju's]{"entity":"stock"}
+    - [JSW steels]{"entity":"stock"}
+    - [Tech mahindra]{"entity":"stock"}
+    - [SBI life insurance]{"entity":"stock"}
+    - [Pidilite ind]{"entity":"stock"}
+
+- intent: pincode
+  examples: |
+    - Check the vaccine slots
+    - I want to know if there are any slots available
+    - Help me in finding a slot for vaccine
+    - slot availability
+    - vaccine slots
+    - Available slots in my location
+    - Can you tell me about available slots for covid vaccine
+    - Centers for covid vaccine around me
+    - Please tell me about available slots here
+    - Show me available slots for covid vaccine
+    - PLease let me know about the available slots
+
