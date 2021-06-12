@@ -33,16 +33,27 @@ Using ngrok server the chatbot was deployed on telegram : https://t.me/Mydemobot
 Here are some of the screenshots:
 
 <img src="https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788384-85a68280-cbea-11eb-8c54-9513506bf628.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788383-850dec00-cbea-11eb-9084-38af30685fde.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788382-83442880-cbea-11eb-9853-05ce7d3c66b7.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788438-efbf2780-cbea-11eb-8b46-25f8005b9232.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788437-efbf2780-cbea-11eb-9c03-685764e95931.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788436-edf56400-cbea-11eb-8331-6bb44e887252.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788500-50e6fb00-cbeb-11eb-9625-d88d37b89654.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788499-504e6480-cbeb-11eb-9551-09a71404c9b9.jpg" width="750" height="750">
-<img src="https://user-images.githubusercontent.com/62187533/121788497-4fb5ce00-cbeb-11eb-8afe-5de9a6f3b3f0.jpg" width="750" height="750"> 
+
+<img src="https://user-images.githubusercontent.com/62187533/121788497-4fb5ce00-cbeb-11eb-8afe-5de9a6f3b3f0.jpg" width="750" height="750">
+
 <img src="https://user-images.githubusercontent.com/62187533/121788496-4dec0a80-cbeb-11eb-82f0-2d86bb8723ab.jpg" width="750" height="750">
+
 
 
 
