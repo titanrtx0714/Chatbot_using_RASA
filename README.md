@@ -20,7 +20,7 @@ This chatbot is built using rasa framework. It can be used to perform the follow
 
 Here's how the model performs after training
 
-![Screenshot (106)](https://user-images.githubusercontent.com/62187533/121788089-1760c080-cbe8-11eb-921e-d1151e2041aa.png)
+![Screenshot (106)](https://user-images.githubusercontent.com/62187533/121788089-1760c080-cbe8-11eb-921e-d1151e2041aa.png=250x250)
 ![Screenshot (107)](https://user-images.githubusercontent.com/62187533/121788081-0ca62b80-cbe8-11eb-9532-3f68d9d4f899.png)
 ![Screenshot (108)](https://user-images.githubusercontent.com/62187533/121788082-0e6fef00-cbe8-11eb-92a5-60654c022eb0.png)
 ![Screenshot (109)](https://user-images.githubusercontent.com/62187533/121788083-0fa11c00-cbe8-11eb-9593-379a86b4aebf.png)
