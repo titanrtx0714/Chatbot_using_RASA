@@ -32,7 +32,7 @@ Using ngrok server the chatbot was deployed on telegram : https://t.me/Mydemobot
 
 Here are some of the screenshots:
 
-<img src="https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg" width="250" height="250">
 ![1623529117304](https://user-images.githubusercontent.com/62187533/121788384-85a68280-cbea-11eb-8c54-9513506bf628.jpg)
 ![1623529117281](https://user-images.githubusercontent.com/62187533/121788383-850dec00-cbea-11eb-9084-38af30685fde.jpg)
 ![1623529117273](https://user-images.githubusercontent.com/62187533/121788382-83442880-cbea-11eb-9853-05ce7d3c66b7.jpg)
