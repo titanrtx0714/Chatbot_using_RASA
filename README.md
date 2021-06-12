@@ -32,12 +32,12 @@ Using ngrok server the chatbot was deployed on telegram : https://t.me/Mydemobot
 
 Here are some of the screenshots:
 
-![1623529117297](https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg){:height="50%" width="50%"}
+![1623529117297](https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg)
 ![1623529117304](https://user-images.githubusercontent.com/62187533/121788384-85a68280-cbea-11eb-8c54-9513506bf628.jpg)
 ![1623529117281](https://user-images.githubusercontent.com/62187533/121788383-850dec00-cbea-11eb-9084-38af30685fde.jpg)
 ![1623529117273](https://user-images.githubusercontent.com/62187533/121788382-83442880-cbea-11eb-9853-05ce7d3c66b7.jpg)
 ![1623529117363](https://user-images.githubusercontent.com/62187533/121788438-efbf2780-cbea-11eb-8b46-25f8005b9232.jpg)
-![1623529117355](https://user-images.githubusercontent.com/62187533/121788437-efbf2780-cbea-11eb-9c03-685764e95931.jpg)
+<img src = "https://user-images.githubusercontent.com/62187533/121788437-efbf2780-cbea-11eb-9c03-685764e95931.jpg"  width="100" height="100">
 ![1623529117348](https://user-images.githubusercontent.com/62187533/121788436-edf56400-cbea-11eb-8331-6bb44e887252.jpg)
 ![1623529117333](https://user-images.githubusercontent.com/62187533/121788500-50e6fb00-cbeb-11eb-9625-d88d37b89654.jpg)
 ![1623529117326](https://user-images.githubusercontent.com/62187533/121788499-504e6480-cbeb-11eb-9551-09a71404c9b9.jpg)
