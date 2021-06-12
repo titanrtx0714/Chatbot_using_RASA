@@ -1,0 +1,223 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - pincode
+  - define_stock
+  - stock_market
+  - start_trading
+  - number_of_stocks
+  - stock_returns
+  - avoid_stocks
+  - bse_nse
+  - demat
+  - bottoming_out
+  - stock_resources
+  - open_demat
+  - st_news
+  - companies
+  - news
+  - tell_stocks:
+      use_entities:
+        - stock
+  - out_of_scope
+  - corona
+  - risk_corona
+  - specify
+  - weather
+  - price:
+      use_entities:
+        - ticker
+  - city:
+      use_entities:
+        - location
+  - ask_weather:
+      use_entities:
+        - location
+  - state_stats:
+      use_entities:
+        - location
+
+actions:
+  - action_weather_tracker
+  - action_news_tracker
+  - action_stocks_tracker
+  - action_corona_tracker
+  - action_stock_news_tracker
+  - action_current_price
+  - action_pincode_submit
+
+entities:
+  - location
+  - stock
+  - ticker
+
+
+slots:
+  location:
+    type: text
+
+  stock:
+    type: text
+
+  ticker:
+    type: text
+
+  pincode:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+
+  date:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+
+responses:
+  utter_greet:
+  - text: "Hey there! I'm a chatbot created using rasa I can answer your questions related to stock market,coronavirus and I can share some latest news
+            and weather updates with you.Also I can find the available slots of covid vaccine in any city."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I'm a chatbot created using rasa I can answer your questions related to stock market,coronavirus and I can share some latest news
+            and weather updates with you. Also I can find the available slots of covid vaccine in any city."
+
+
+  utter_define_stock:
+  - text: "A stock or share (also known as a company's equity) is a financial instrument that represents ownership in a company or corporation and
+          represents a proportionate claim on its assets (what it owns) and earnings (what it generates in profits).﻿﻿
+          Stock ownership implies that the shareholder owns a slice of the company equal to the number of shares held as a proportion of the company's
+          total outstanding shares. For instance, an individual or entity that owns 100,000 shares of a company with one million outstanding shares would
+           have a 10% ownership stake in it. Most companies have outstanding shares that run into the millions or billions."
+
+  utter_start_trading:
+  - text: "To start trading in share market or stock market in India, you need a Demat and trading account. Demat and trading accounts in India are
+          provided by the two depositories, NSDL and CDS, through brokerage firms, also known as stock brokers or share brokers.
+          The trading account is where you will place bids for buy or sell orders and demat account is for holding your shares in dematerialized form.
+          The trading of shares in Indian stock market takes place on two stock exchanges-the Bombay stock exchange(BSE) and the National stock exchange
+          (NSE)."
+
+  utter_stock_market:
+  - text: "Buying a share or stock of a company simply means you are buying a unit of the company. Investors are able to buy the stocks of the company
+          once the company share is launched in the market.
+          Share is a unit of ownership of a company and is offered for sale in the market when a company needs to raise money for further growth.
+          The shares in the market are launched in the form of initial public offering (IPO). The price of IPO of a company is decided based on how much
+          the company is estimated to be worth, and how many shares are being issued. The company gets to keep the money raised to grow its business,
+          while the shares or stock of the company continue to trade on an exchange, such as the NSE and BSE.
+          In stock market, a company gets only the amount collected through IPO launch. The money from buying or selling of the stock of the company on the
+          exchanges is not received by the company. Investors gain or lose money in market depending on the perceived value of company."
+
+  utter_no_stocks:
+  - text: "Your portfolio should not be over or under diversified. Do not invest all your money in a single stock as it increases the risk in your portfolio.
+          Diversify your portfolio by purchasing multiple stocks from different industries.
+          In general, you should not buy more than 8-10 stocks as it becomes really difficult for a retail investor to monitor more stocks. Besides,
+          over-diversification kills the profit."
+
+  utter_stock_returns:
+  - text: "Your stock portfolio will always consist of multiple stocks. At any particular time, some stocks will perform excellently well, while some will not.
+          Your portfolio returns will be the average of both.
+          During a good market, your portfolio can give you a return as high as 30-35%.However, during a bad market- the returns can be as low as 2-5%
+          (maybe even negative).
+          If you sum up everything, you can expect an annual return of 15-18%, depending on how good you were at picking stocks. Nevertheless, you can
+          generate even better return if you are ready to put some hard work."
+
+  utter_avoid_stocks:
+    - text: "You should avoid investing in stocks with low liquidity. There are a number of small-cap stocks where the prices may be continuously falling,
+            but the investors are not able to sell that stock just because there are no buyers.Avoid investing in companies with low liquidity.
+            Further, for the beginners- I would also advise avoiding investing in penny stocks. These companies are very risky and prone to different
+            scams like pump and dump etc."
+
+  utter_bse_nse:
+    - text: "BSE (Bombay Stock Exchange) and NSE (National Stock Exchange) are among two largest stock exchanges in India where shares of move then 5000
+            companies are traded. In simple term BSE / NSE provides a platform for investors to buy and sell the listed company shares."
+
+  utter_demat:
+    - text: "A demat account is mandatory since the credit of shares granted to you will be shared in this account."
+
+  utter_bottoming_out:
+    - text: "Bottoming out is the phase when stock falls downwards to it's lowest peak and is expected to reach to rise in the coming days.This phases seems
+            as profitable by the investors as the stock is expected to rise rapidly."
+
+  utter_stock_resources:
+    - text: "Here are some good resources to understand stock market online:
+            1.) Investopedia: Investing 101 Tutorial
+            2.) Yahoo Finance App and Website
+            3.) Scottrade General Investment Portal
+            4.) The Motley Fool
+            5.) The Money Tree Investing Podcast"
+
+  utter_open_demat:
+    - text: "Steps to open a demat account:
+            Step 1: Choose Depository Participant (DP)
+            Step 2: Submit Demat Account Opening Form
+            Step 3: Fulfill KYC (Know Your Customer) Norms
+            Step 4: Go through the Verification Process
+            Step 5: Sign the Agreement Copies
+            Step 6: Get Your BO ID Number"
+
+  utter_corona:
+  - text: "Coronavirus disease 2019 (COVID-19), also known as the coronavirus, or COVID, is a contagious disease caused by severe acute respiratory syndrome
+            coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019.The disease has since spread worldwide,
+            leading to an ongoing pandemic.
+            Symptoms of COVID-19 are variable, but often include fever,cough, headache,fatigue, breathing difficulties, and loss of smell and taste.
+            Symptoms may begin one to fourteen days after exposure to the virus.
+            Transmission of COVID-19 occurs when people are exposed to virus-containing respiratory droplets and airborne particles exhaled by an infected
+            person.Those particles may be inhaled or may reach the mouth, nose, or eyes of a person through touching or direct deposition
+            (i.e. being coughed on).
+            For more information you can check out this url : https://en.wikipedia.org/wiki/COVID-19 ."
+
+  utter_risk_corona:
+    - text: "People of any age, even children, can catch COVID-19. But it most commonly affects middle-aged and older adults. The risk of developing dangerous
+            symptoms increases with age, with those who are age 85 and older at the highest risk of serious symptoms. In the U.S., about 80% of deaths from
+            the disease have been in people age 65 and older. Risks are even higher for older people when they have other health conditions."
+
+
+  utter_specify:
+    - text: "Can you please specify the name of state whose numbers you want to know?"
+
+  utter_out_of_scope:
+    - text: "I wish I could answer your question, Please ask some other question."
+    - text: "Sorry I don't know the answer."
+    - text: "I am still learning! Please ask me some other question."
+
+  utter_specify_city:
+    - text: "Can you please specify the city whose weather you want to know?"
+
+  utter_ask_pincode:
+    - text: "Enter your pincode"
+
+  utter_ask_date:
+    - text: "Enter the date you want to check for in the given format 'DD-MM-YYYY"
+
+forms:
+  slot_pincode_form:
+    date:
+    - type: from_text
+    pincode:
+    - type: from_text
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
