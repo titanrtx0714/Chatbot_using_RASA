@@ -1,5 +1,7 @@
 # Chatbot-using-rasa
 
+## This repository is about creating a chatbot using rasa that can answer the users queries related to stock market,latest news and weather about coronavirus and ccovid vaccine slot availability in any city within India.
+
 Rasa is an open source machine learning framework for building AI assistants and chatbots 
 
 Rasa NLU — This is the place, where rasa tries to understand User messages to detect Intent and Entity in your message. Rasa NLU has different components for recognizing intents and entities, most of which have some additional dependencies.
