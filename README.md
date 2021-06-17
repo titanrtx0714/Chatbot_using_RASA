@@ -1,6 +1,6 @@
 # Chatbot-using-rasa
 
-## This repository is about creating a chatbot using rasa that can answer the users queries related to stock market,latest news and weather about coronavirus and covid vaccine slot availability in any city within India.
+## This project is about creating a chatbot using rasa that can answer the users queries related to stock market, provides latest news and weather updates, tracks the coronavirus cases in any state and check the covid-19 vaccine slot availability in any city within India.
 
 Rasa is an open source machine learning framework for building AI assistants and chatbots 
 
