@@ -1,6 +1,6 @@
 # Chatbot-using-rasa
 
-## This project is about implementing a chatbot using rasa that can answer the FAQ's related to stock market, check the current price of any stock, analyze the sentiments of tweets related to any company, provides latest news and weather updates, tracks the coronavirus cases in any state and check the covid-19 vaccine slot availability in any city within India.
+## In this project I implemented a chatbot using 'Rasa Framework' that can answer the FAQ's related to stock market, check the current price of any stock, analyze the sentiments of tweets related to any company, provides latest news and weather updates, tracks the coronavirus cases in any state and check the covid-19 vaccine slot availability in any city within India.
 
 Rasa is an open source machine learning framework for building AI assistants and chatbots 
 
