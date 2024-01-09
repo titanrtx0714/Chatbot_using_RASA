@@ -10,9 +10,6 @@ Here's how the model performs after training
 ![Screenshot (110)](https://user-images.githubusercontent.com/62187533/121788085-0fa11c00-cbe8-11eb-8c79-1194226f0f2f.png)
 ![Screenshot (111)](https://user-images.githubusercontent.com/62187533/121788086-1039b280-cbe8-11eb-9535-508877d507e7.png)
 
-
-Using ngrok server the chatbot was deployed on telegram : https://t.me/Mydemobot20_bot
-
 Here are some of the screenshots:
 
 <img src="https://user-images.githubusercontent.com/62187533/121788385-85a68280-cbea-11eb-92e8-09afea8081c1.jpg" width="750" height="750">
