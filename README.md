@@ -1,24 +1,5 @@
 # Chatbot-using-rasa
 
-## In this project I implemented a chatbot using 'Rasa Framework' that can answer the FAQ's related to stock market, check the current price of any stock, analyze the sentiments of tweets related to any company, provides latest news and weather updates, tracks the coronavirus cases in any state and check the covid-19 vaccine slot availability in any city within India.
-
-Rasa is an open source machine learning framework for building AI assistants and chatbots 
-
-Rasa NLU — This is the place, where rasa tries to understand User messages to detect Intent and Entity in your message. Rasa NLU has different components for recognizing intents and entities, most of which have some additional dependencies.
-
-Rasa Core — This is the place, where Rasa try to help you with contextual message flow. Based on User message, it can predict dialogue as a reply and can trigger Rasa Action Server.
-
-This chatbot is built using rasa framework. It can be used to perform the following functions:
-
-- provides the weather details of any city using 'OpenWeatherMap API'
-- share trending news using 'Newsapi' whenever news asks for news
-- share news related to stock market
-- answer some faq's related to stock market
-- tell the current price of a stock any company
-- It can extract and analyze the tweets related to any company and classify them into a positive or a negative tweet using 'Flair' as financial sentiment analysis allows us to understand the effect of social media reactions and emotions on the stock market and vice versa.
-- It can also answer some faq's related to coronavirus
-- Check the corona cases in any state of India using 'Covid19 API' 
-- It can also check the available slots for covid vaccine on a particular date in any city by providing the pincode of that city by using 'API Setu'.
 
 Here's how the model performs after training
 
